@@ -1,0 +1,176 @@
+/*common style start*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --themeYellow: #f2ac20;            /*Creating CSS variable */
+    --gray: #efefef;
+    --red: #ad1313;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button,
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2e2e2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.fullContainer{
+    width: 100%;
+}
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeYellow);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeYellow);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+    
+}
+
+section{
+    padding: 110px 0;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 15px o;
+    height: 75px;
+}
+
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--themeYellow);  /*Use of CSS variable */
+}
+
+/*common style end*/
+/*eduction section start*/
+
+#educationSection{
+    padding-top: 120px;
+}
+
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education .videoplayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.education .sectionTitle{
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+    font-weight: 500;
+}
+
+.education .educationContainer{
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationContainer h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.education .educationContainer p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0 30px;
+}
+
+.education .educationContainer button{
+    background-color: var(--themeYellow);
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+
+}
+
+/*eduction section end*/
